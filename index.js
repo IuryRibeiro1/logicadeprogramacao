@@ -4,11 +4,13 @@ Number = 18;
 if (18 >= 18) console.log ("Cadastro Permitido")
 else console.log ("Cadastro não permitido");
 
-var listaDeCadastro = 0
+let listaDeCadastro = ["João, Maria, Pedro, Camila"]
+let quantidadeDeCadastro = listaDeCadastro.length;
+console.log(quantidadeDeCadastro);
 
-while (listaDeCadastro <= 100) { console.log("Cadastro permitido");
-listaDeCadastro++
+while (quantidadeDeCadastro < 100) { console.log("Cadastro permitido");
+quantidadeDeCadastro++
 
 }
-if (listaDeCadastro >= 100) console.log ("Cadastro não permitido por excesso de vagas");
+if (quantidadeDeCadastro >= 100) console.log ("Cadastro não permitido por excesso de vagas");
 

@@ -53,15 +53,40 @@ _nome;
 _cnpj;
 _razaoSocial
 constructor(pNome, pCnpj, pRazaoSocial) {
+ 
+    this._nome = pNome;
+    this._cnpj = pCnpj;
+    this._razaoSocial = pRazaoSocial;
+}
+ 
+    get nome(){
+        return this._nome;
+   }
+   set nome(pNome){
+       this._nome = pNome;
+   }
+   get cnpj(){
+       return this._cnpj;
+   }
+   set cnpj(pCnpj){
+       this._cnpj = pCnpj;
+   }
+   get _razaoSocial(){
+       return this._razaoSocial;
+   }
+   set _razaoSocial(pRazaoSocial){
+       this._razaoSocial = pRazaoSocial
+   }
+
+   imprimir(){
+    return "Nome: " + this._nome +
+           "\nCnpj: " + this._cnpj +
+           "\nRazaoSocial: " + this._razaoSocial;  
 
 }
-
-
-
-
-
 }
-
+var juridica = new Juridica ("Iury Ribeiro", "31.323.718/0001-42" , "SyuDoto");
+console.log(juridica.imprimir());
 
 
 

@@ -32,16 +32,13 @@ class Fisica {
 
     imprimir(){
         return "Nome: " + this._nome +
-        "\nCpf: " + this._cpf +
-        "\nDatanasc: " + this._dataNasc +     
+               "\nCpf: " + this._cpf +
+               "\nDataNasc: " + this._dataNasc;  
     }
-
 }
-  
 var fisica = new Fisica ("Iury Ribeiro", "021.511.031-61" , "06/03/1997");
-console.log("Nome: " , fisica.imprimir);
-fisica.nome = "Iury Ribeiro";
-console.log("Novo nome: " , fisica.imprimir, "021.511.031-61" , "06/03/1997");
+console.log(fisica.imprimir());
+
 
 
 

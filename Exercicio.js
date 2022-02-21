@@ -2,10 +2,13 @@
 class Fisica {
 
     _nome;
-    _cpf
-    _dataNasc
+    _cpf;
+    _dataNasc;
     constructor (pNome, pCpf, pDataNasc){
         this._nome = pNome;
+        this._cpf = pCpf;
+        this._dataNasc = pDataNasc;
+    
     }
     get nome(){
         return this._nome;
@@ -26,7 +29,7 @@ class Fisica {
         return this._dataNasc;
     }
     set dataNasc(pDataNasc){
-        this._dataNasc = pdataNasc;
+        this._dataNasc = pDataNasc;
     }
 
 
@@ -41,9 +44,23 @@ console.log(fisica.imprimir());
 
 
 
+console.log("\n#################################################");
+
+
+class Juridica {
+
+_nome;
+_cnpj;
+_razaoSocial
+constructor(pNome, pCnpj, pRazaoSocial) {
+
+}
 
 
 
+
+
+}
 
 
 

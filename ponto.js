@@ -30,7 +30,7 @@ class Fisica extends Endereço{
         }
 
         imprimir(){
-            return "\n Nome: " + this.nome +
+            return " Nome: " + this.nome +
                    "\n CPF: " + this.cpf +
                    "\n DataDeNasc: " + this.dataDeNasc +
                    "\n Rua: " + this.rua +
@@ -41,7 +41,7 @@ class Fisica extends Endereço{
         }
 }
 
-    console.log("Pessoa Física: ")
+    console.log("\nPessoa Física: ")
     var pf = new Fisica ("Iury" , "000.000.000-00" , "06/03/1997" , "Rubinho" , " Macapá" , "AP" , "68909-00" , "Brasil")
     console.log(pf.imprimir())
 
@@ -60,7 +60,7 @@ class Fisica extends Endereço{
        }
 
        imprimir(){
-        return "\n Nome: " + this.nome +
+        return " Nome: " + this.nome +
                "\n CNPJ: " + this.cnpj +
                "\n RazãoSocial: " + this.razaoSocial +
                "\n Rua: " + this.rua +
@@ -71,6 +71,6 @@ class Fisica extends Endereço{
     }
 
     }
-    console.log("Pessoa Jurídica:")
+    console.log("\nPessoa Jurídica:")
     var pj = new Juridica ("Ribeiro" , "37.082.982/0001-18", "SyuDoto" , "Ayrton" , " São Paulo" , "SP" , "68509-00" , "Brasil")
     console.log(pj.imprimir())

@@ -1,12 +1,6 @@
 class Endereço{
 
-    rua;
-    cidade;
-    estado;
-    cep;
-    pais;
-
-        constructor(pRua, pCidade, pEstado, pCep, pPais){
+    constructor(pRua, pCidade, pEstado, pCep, pPais){
             this.rua = pRua;
             this.cidade = pCidade;
             this.estado = pEstado;
@@ -17,9 +11,6 @@ class Endereço{
 }
 
 class Fisica extends Endereço{
-    nome;
-    cpf;
-    dataDeNasc;
 
     constructor(pNome, pCpf, pDataDeNasc,pRua, pCidade, pEstado, pCep, pPais){
     super(pRua, pCidade, pEstado, pCep, pPais)
@@ -29,29 +20,17 @@ class Fisica extends Endereço{
         this.dataDeNasc = pDataDeNasc;
         }
 
-        imprimir(){
-            return " Nome: " + this.nome +
-                   "\n CPF: " + this.cpf +
-                   "\n DataDeNasc: " + this.dataDeNasc +
-                   "\n Rua: " + this.rua +
-                   "\n Cidade: " + this.cidade +
-                   "\n Estado: " + this.estado +
-                   "\n Cep: " + this.cep +
-                   "\n País: " + this.pais; 
+       toString(){
+           return `Nome: ${this.nome}\nCPF: ${this.cpf}\nDatadeNascimento: ${this.dataDeNasc}\nRua: ${this.rua}\nCidade: ${this.cidade}\nEstado: ${this.estado}\nCEP: ${this.cep}\nPaís: ${this.pais} `
         }
 }
 
     console.log("\nPessoa Física: ")
     var pf = new Fisica ("Iury" , "000.000.000-00" , "06/03/1997" , "Rubinho" , " Macapá" , "AP" , "68909-00" , "Brasil")
-    console.log(pf.imprimir())
-
-    console.log("##########################")
+    console.log(pf.toString())
 
     class Juridica extends Endereço{
-       nome;
-       cnpj;
-       razaoSocial;
-
+     
        constructor(pNome, pCnpj, pRazaoSocial, pRua, pCidade, pEstado, pCep, pPais){
            super(pRua, pCidade, pEstado, pCep, pPais)
            this.nome = pNome;
@@ -59,18 +38,11 @@ class Fisica extends Endereço{
            this.razaoSocial = pRazaoSocial;
        }
 
-       imprimir(){
-        return " Nome: " + this.nome +
-               "\n CNPJ: " + this.cnpj +
-               "\n RazãoSocial: " + this.razaoSocial +
-               "\n Rua: " + this.rua +
-               "\n Cidade: " + this.cidade +
-               "\n Estado: " + this.estado +
-               "\n Cep: " + this.cep +
-               "\n País: " + this.pais; 
+       toString(){
+        return `Nome: ${this.nome}\nCNPJ: ${this.cnpj}\nRazãoSocial: ${this.razaoSocial}\nRua: ${this.rua}\nCidade: ${this.cidade}\nEstado: ${this.estado}\nCEP: ${this.cep}\nPaís: ${this.pais}`
     }
 
     }
     console.log("\nPessoa Jurídica:")
     var pj = new Juridica ("Ribeiro" , "37.082.982/0001-18", "SyuDoto" , "Ayrton" , " São Paulo" , "SP" , "68509-00" , "Brasil")
-    console.log(pj.imprimir())
+    console.log(pj.toString())

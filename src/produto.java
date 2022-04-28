@@ -36,7 +36,7 @@ public class produto {
 
     public void comprar(double valor){
         this.setQuantidade(this.quantidade - valor );
-        this.setPreco(this.quantidade *  this.preco);
+        this.setPreco(this.preco * valor);
     }
 
 

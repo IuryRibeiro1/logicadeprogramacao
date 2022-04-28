@@ -1,10 +1,8 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class empresa {
     public static void main(String[] args) {
         produto pc = new produto("Carne" , 10  , 30.00);
         pc.comprar(2.0);
-        produto_leite pl = new produto_leite("Leite" , 10.0, 5.00);
+        produto_leite pl = new produto_leite("Leite" , 10.0, 30.00);
         pl.comprar(3.0);
         produto_oleo po = new produto_oleo("Oleo", 15.0 , 3.00);
         po.comprar(5.0);
